@@ -6,5 +6,13 @@ describe "String" do
       str.chop.should == "chop"
     end
   end
+
+  context "empty strings" do
+    it "is an empty string" do
+      str = " "
+
+      str.empty?.should eq true
+    end
+  end
 end
 
